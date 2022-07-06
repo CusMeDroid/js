@@ -6,6 +6,6 @@ jQuery adalah library JavaScript yang cepat, kecil, dan kaya fitur. Itu membuat 
 ## Cara embed
 `<head>`
 
-`<script src="https://cusmedroid.github.io/js/"></script>`
+`<script src="https://cusmedroid.github.io/js/jquery-3.6.0.min.js"></script>`
 
 `</head>`
