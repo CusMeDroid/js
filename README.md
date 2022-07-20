@@ -9,3 +9,10 @@ jQuery adalah library JavaScript yang cepat, kecil, dan kaya fitur. Itu membuat 
 `<script src="https://cusmedroid.github.io/js/jquery-3.6.0.min.js"></script>`
 
 `</head>`
+
+# Anti CTRL+U
+`<body id="myCopyRight">`
+
+`<script src="https://cusmedroid.github.io/js/disclaimer.js"></script>`
+
+`</body>`
