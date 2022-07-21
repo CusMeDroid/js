@@ -2,32 +2,25 @@ var bar1 = document.getElementsByClassName("bar1");
 var bar2 = document.getElementsByClassName("bar3");
 var bar3 = document.getElementsByClassName("bar3");
 
+var lh = "";
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > lh.value || document.documentElement.scrollTop > lh.value) {
+    bar1.style.background = "#222 !important";
+    bar2.style.background = "#222 !important";
+    bar3.style.background = "#222 !important";
+  } else {
+    bar1.style.background = "#FFF !important";
+    bar2.style.background = "#FFF !important";
+    bar3.style.background = "#FFF !important";
+  }
+}
+
 function myResponsive(mmnm) {
   if (mmnm.matches) {
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        bar1.style.background = "#222 !important";
-        bar2.style.background = "#222 !important";
-        bar3.style.background = "#222 !important";
-      } else {
-        bar1.style.background = "#FFF !important";
-        bar2.style.background = "#FFF !important";
-        bar3.style.background = "#FFF !important";
-      }
-    }
+    lh = "300";
   } else {
-    function scrollFunction() {
-      if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-        bar1.style.background = "#222 !important";
-        bar2.style.background = "#222 !important";
-        bar3.style.background = "#222 !important";
-      } else {
-        bar1.style.background = "#FFF !important";
-        bar2.style.background = "#FFF !important";
-        bar3.style.background = "#FFF !important";
-      }
-    }
+    lh = "600";
   }
 }
 
