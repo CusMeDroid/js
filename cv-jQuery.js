@@ -1,9 +1,8 @@
-var lh = "";
 window.onscroll = function() {
   scrollFunction()
 };
 function scrollFunction() {
-  if (document.body.scrollTop > lh.value || document.documentElement.scrollTop > lh.value) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     document.getElementById("bar1").style.backgroundColor = "black";
     document.getElementById("bar2").style.backgroundColor = "black";
     document.getElementById("bar3").style.backgroundColor = "black";
@@ -13,18 +12,6 @@ function scrollFunction() {
     document.getElementById("bar3").style.backgroundColor = "white";
   }
 }
-
-function myResponsive(mmnm) {
-  if (mmnm.matches) {
-    lh = "300";
-  } else {
-    lh = "600";
-  }
-}
-
-var mmnm = window.matchMedia("(max-width: 700px)");
-myResponsive(mmnm);
-mmnm.addListener(myResponsive);
 
 var meaudio = document.getElementById('myAudio'); 
 var mp1 = document.getElementById('musicpl'); 
