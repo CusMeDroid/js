@@ -8,13 +8,13 @@ window.onscroll = function() {
 };
 function scrollFunction() {
   if (document.body.scrollTop > lh.value || document.documentElement.scrollTop > lh.value) {
-    bar1.style.background = "#FFF !important";
-    bar2.style.background = "#FFF !important";
-    bar3.style.background = "#FFF !important";
-  } else {
     bar1.style.background = "#222 !important";
     bar2.style.background = "#222 !important";
     bar3.style.background = "#222 !important";
+  } else {
+    bar1.style.backgroundColor  = "#222 !important";
+    bar2.style.backgroundColor  = "#222 !important";
+    bar3.style.backgroundColor  = "#222 !important";
   }
 }
 
