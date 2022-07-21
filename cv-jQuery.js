@@ -2,10 +2,9 @@ var bar1 = document.getElementsByClassName("bar1");
 var bar2 = document.getElementsByClassName("bar3");
 var bar3 = document.getElementsByClassName("bar3");
 
-window.onscroll = function() {scrollFunction()};
-
 function myResponsive(mmnm) {
   if (mmnm.matches) {
+    window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
       if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         bar1.style.background = "#222 !important";
