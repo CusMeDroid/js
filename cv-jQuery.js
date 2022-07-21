@@ -12,9 +12,9 @@ function scrollFunction() {
     bar2.style.background = "#222 !important";
     bar3.style.background = "#222 !important";
   } else {
-    bar1.style.backgroundColor  = "#222 !important";
-    bar2.style.backgroundColor  = "#222 !important";
-    bar3.style.backgroundColor  = "#222 !important";
+    bar1.style.backgroundColor  = "#FFF !important";
+    bar2.style.backgroundColor  = "#FFF !important";
+    bar3.style.backgroundColor  = "#FFF !important";
   }
 }
 
