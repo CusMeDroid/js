@@ -4,13 +4,13 @@ window.onscroll = function() {
 };
 function scrollFunction() {
   if (document.body.scrollTop > lh.value || document.documentElement.scrollTop > lh.value) {
-    document.getElementsByClassName("bar1").style.background = "#222 !important";
-    document.getElementsByClassName("bar1").style.background = "#222 !important";
-    document.getElementsByClassName("bar1").style.background = "#222 !important";
+    document.getElementsByClassName("bar1").style.background = "#222";
+    document.getElementsByClassName("bar2").style.background = "#222";
+    document.getElementsByClassName("bar3").style.background = "#222";
   } else {
     document.getElementsByClassName("bar1").style.backgroundColor = "#FFF !important";
-    document.getElementsByClassName("bar1").style.backgroundColor = "#FFF !important";
-    document.getElementsByClassName("bar1").style.backgroundColor = "#FFF !important";
+    document.getElementsByClassName("bar2").style.backgroundColor = "#FFF !important";
+    document.getElementsByClassName("bar3").style.backgroundColor = "#FFF !important";
   }
 }
 
