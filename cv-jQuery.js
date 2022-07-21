@@ -6,7 +6,7 @@ function scrollFunction() {
     document.getElementById("bar1").style.backgroundColor = "white";
     document.getElementById("bar2").style.backgroundColor = "white";
     document.getElementById("bar3").style.backgroundColor = "white";
-  } else {
+  } else if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
     document.getElementById("bar1").style.backgroundColor = "black";
     document.getElementById("bar2").style.backgroundColor = "black";
     document.getElementById("bar3").style.backgroundColor = "black";
