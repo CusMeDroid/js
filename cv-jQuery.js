@@ -1,20 +1,16 @@
-var bar1 = document.getElementsByClassName("bar1");
-var bar2 = document.getElementsByClassName("bar3");
-var bar3 = document.getElementsByClassName("bar3");
-
 var lh = "";
 window.onscroll = function() {
   scrollFunction()
 };
 function scrollFunction() {
   if (document.body.scrollTop > lh.value || document.documentElement.scrollTop > lh.value) {
-    bar1.style.background = "#222 !important";
-    bar2.style.background = "#222 !important";
-    bar3.style.background = "#222 !important";
+    document.getElementsByClassName("bar1").style.background = "#222 !important";
+    document.getElementsByClassName("bar1").style.background = "#222 !important";
+    document.getElementsByClassName("bar1").style.background = "#222 !important";
   } else {
-    bar1.style.backgroundColor  = "#FFF !important";
-    bar2.style.backgroundColor  = "#FFF !important";
-    bar3.style.backgroundColor  = "#FFF !important";
+    document.getElementsByClassName("bar1").style.backgroundColor = "#FFF !important";
+    document.getElementsByClassName("bar1").style.backgroundColor = "#FFF !important";
+    document.getElementsByClassName("bar1").style.backgroundColor = "#FFF !important";
   }
 }
 
