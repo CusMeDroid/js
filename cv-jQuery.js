@@ -19,6 +19,8 @@ var mp2 = document.getElementById('musicpa');
 var mp1a = document.getElementById('musicp2'); 
 var mp2a = document.getElementById('musicpa2'); 
 
+meaudio.play();
+
 function playAudio() { 
   meaudio.play(); 
   mp1.style.display = 'none';
