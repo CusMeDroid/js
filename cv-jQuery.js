@@ -54,7 +54,7 @@ var timer = setTimeout(function() {
 }, 1500);
 $(document).ready(function(){
     $(".preloader").setTimeout();
-});
+})
 
 /* onclick */
 function mAbout() {
