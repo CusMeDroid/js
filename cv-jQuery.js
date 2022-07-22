@@ -47,18 +47,17 @@ function pauseAudio() {
 var timer = setTimeout(
 function() {
     document.getElementById("preloader").style.display = "none";
+    document.getElementById('myAudio').play;
+    document.getElementById("musicpl").style.display = "none";
+    document.getElementById("musicpa").style.display = "none";
+    document.getElementById("musicp2").style.display = "none";
+    document.getElementById("musicpa2").style.display = "none";
 }, 1500);
 $(document).ready(
   function(){
     $(".preloader").setTimeout();
   }
 );
-
-if (timer = setTimeout) {
-  playAudio();
-} else {
-  pauseAudio();
-}
 
 /* onclick */
 function mAbout() {
