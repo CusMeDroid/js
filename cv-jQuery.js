@@ -28,14 +28,6 @@ var mp2 = document.getElementById('musicpa');
 var mp1a = document.getElementById('musicp2'); 
 var mp2a = document.getElementById('musicpa2');
 
-var timer = setTimeout(function() {
-    document.getElementById("preloader").style.display = "none";
-    playAudio();
-}, 1500);
-$(document).ready(function(){
-    $(".preloader").setTimeout();
-});
-
 function playAudio() { 
   meaudio.play(); 
   mp1.style.display = 'none';
@@ -50,7 +42,16 @@ function pauseAudio() {
   mp2.style.display = 'none';
   mp1a.style.display = 'block';
   mp2a.style.display = 'none';
-} 
+}
+
+var timer = setTimeout(
+function() {
+    document.getElementById("preloader").style.display = "none";
+    playAudio();
+}, 1500);
+$(document).ready(function(){
+    $(".preloader").setTimeout();
+});
 
 /* onclick */
 function mAbout() {
