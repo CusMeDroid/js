@@ -16,9 +16,9 @@ function scrollFunction() {
     document.getElementById("bar2").style.backgroundColor = "black";
     document.getElementById("bar3").style.backgroundColor = "black";
   } else if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    document.getElementById("bar1").style.backgroundColor = "#fafafa";
-    document.getElementById("bar2").style.backgroundColor = "#fafafa";
-    document.getElementById("bar3").style.backgroundColor = "#fafafa";
+    document.getElementById("bar1").style.backgroundColor = "#F5F5F5";
+    document.getElementById("bar2").style.backgroundColor = "#F5F5F5";
+    document.getElementById("bar3").style.backgroundColor = "#F5F5F5";
   }
 }
 
