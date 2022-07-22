@@ -47,17 +47,18 @@ function pauseAudio() {
 var timer = setTimeout(
 function() {
     document.getElementById("preloader").style.display = "none";
-    meaudio.autoplay();
-    mp1.style.display = 'none';
-    mp2.style.display = 'block';
-    mp1a.style.display = 'none';
-    mp2a.style.display = 'block';
 }, 1500);
 $(document).ready(
   function(){
     $(".preloader").setTimeout();
   }
 );
+
+if (timer = setTimeout) {
+  playAudio();
+} else {
+  pauseAudio();
+}
 
 /* onclick */
 function mAbout() {
