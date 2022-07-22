@@ -1,3 +1,12 @@
+/*
+* This for cv theme, i don't want to break my style just because of code change!
+* Please Do Not Remove This
+* 7/22/2022
+* CusMeDroid
+* IyoRTML
+* Suryo DwiJayanto
+*/
+
 window.onscroll = function() {
   scrollFunction()
 };
