@@ -53,8 +53,8 @@ var timer = setTimeout(function() {
     document.getElementById("musicpa2").style.display = "block";
 }, 1500);
 $(document).ready(function(){
-    $(".preloader").setTimeout();
-})
+    $("#preloader").setTimeout();
+});
 
 /* onclick */
 function mAbout() {
