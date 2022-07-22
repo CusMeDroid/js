@@ -47,16 +47,12 @@ function pauseAudio() {
 var timer = setTimeout(function() {
     document.getElementById("preloader").style.display = "none";
     document.getElementById('myAudio').autoplay;
-    document.getElementById("musicpl").style.display = "none";
-    document.getElementById("musicpa").style.display = "block";
-    document.getElementById("musicp2").style.display = "none";
-    document.getElementById("musicpa2").style.display = "block";
 }, 1500);
 $(document).ready(function(){
     $("#preloader").setTimeout();
 });
 
-const loader = document.querySelector(".loader");
+const loader = document.querySelector(".preloader");
 window.onload = function(){
     setTimeout(function(){
      loader.style.opacity = "0";
