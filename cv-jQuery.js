@@ -11,7 +11,7 @@ window.onscroll = function() {
   scrollFunction()
 };
 function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (document.body.scrollTop > 260 || document.documentElement.scrollTop > 260) {
     document.getElementById("bar1").style.backgroundColor = "black";
     document.getElementById("bar2").style.backgroundColor = "black";
     document.getElementById("bar3").style.backgroundColor = "black";
