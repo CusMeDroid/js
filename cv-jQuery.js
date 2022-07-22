@@ -44,6 +44,18 @@ function pauseAudio() {
   mp2a.style.display = 'none';
 }
 
+var timer = setTimeout(function() {
+    document.getElementById("preloader").style.display = "none";
+    document.getElementById('myAudio').autoplay;
+    document.getElementById("musicpl").style.display = "none";
+    document.getElementById("musicpa").style.display = "block";
+    document.getElementById("musicp2").style.display = "none";
+    document.getElementById("musicpa2").style.display = "block";
+}, 1500);
+$(document).ready(function(){
+    $("#preloader").setTimeout();
+});
+
 const loader = document.querySelector(".loader");
 window.onload = function(){
     setTimeout(function(){
@@ -58,18 +70,6 @@ window.onload = function(){
      }, 500);
     },1500);
 }
-
-var timer = setTimeout(function() {
-    document.getElementById("preloader").style.display = "none";
-    document.getElementById('myAudio').autoplay;
-    document.getElementById("musicpl").style.display = "none";
-    document.getElementById("musicpa").style.display = "block";
-    document.getElementById("musicp2").style.display = "none";
-    document.getElementById("musicpa2").style.display = "block";
-}, 1500);
-$(document).ready(function(){
-    $("#preloader").setTimeout();
-});
 
 /* onclick */
 function mAbout() {
