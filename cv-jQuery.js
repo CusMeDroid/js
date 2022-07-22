@@ -7,6 +7,14 @@
 * Suryo DwiJayanto
 */
 
+var timer = setTimeout(function() {
+    document.getElementById("preloader").style.display = "none";
+    meaudio.play();
+}, 1500);
+$(document).ready(function(){
+    $(".preloader").setTimeout();
+})
+
 window.onscroll = function() {
   scrollFunction()
 };
@@ -27,8 +35,6 @@ var mp1 = document.getElementById('musicpl');
 var mp2 = document.getElementById('musicpa'); 
 var mp1a = document.getElementById('musicp2'); 
 var mp2a = document.getElementById('musicpa2'); 
-
-meaudio.play();
 
 function playAudio() { 
   meaudio.play(); 
