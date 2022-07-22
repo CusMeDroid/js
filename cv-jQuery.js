@@ -59,6 +59,13 @@ window.onload = function(){
     },1500);
 }
 
+var timer = setTimeout(function() {
+    document.getElementById("preloader").style.display = "none";
+}, 1500);
+$(document).ready(function(){
+    $("#preloader").setTimeout();
+});
+
 /* onclick */
 function mAbout() {
     window.location.href = '#about';
