@@ -46,7 +46,7 @@ function pauseAudio() {
 
 var timer = setTimeout(function() {
     document.getElementById("preloader").style.display = "none";
-    document.getElementById('myAudio').play;
+    document.getElementById('myAudio').autoplay;
     document.getElementById("musicpl").style.display = "none";
     document.getElementById("musicpa").style.display = "block";
     document.getElementById("musicp2").style.display = "none";
