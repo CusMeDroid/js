@@ -12,16 +12,12 @@ var mp1 = document.getElementById('musicpl');
 var mp2 = document.getElementById('musicpa'); 
 var mp1a = document.getElementById('musicp2'); 
 var mp2a = document.getElementById('musicpa2');
-var loader = document.getElementById("preloader");
-
-window.onload = function() {
-    setTimeout(function() {
-      loader.style.opacity = "0";
-      setTimeout(function() {
-        loader.style.display = "none";
-      }, 500);
-    },1500);
-}
+var timer = setTimeout(function() {
+    document.getElementById("preloader").style.display = "none";
+}, 1500);
+$(document).ready(function() {
+    $(".preloader").setTimeout();
+});
 
 function playAudio() { 
   meaudio.play(); 
