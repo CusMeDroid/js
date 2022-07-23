@@ -7,26 +7,21 @@
 * Suryo DwiJayanto
 */
 
-window.onscroll = function() {
-  scrollFunction()
-};
-function scrollFunction() {
-  if (document.body.scrollTop > 260 || document.documentElement.scrollTop > 260) {
-    document.getElementById("bar1").style.backgroundColor = "black";
-    document.getElementById("bar2").style.backgroundColor = "black";
-    document.getElementById("bar3").style.backgroundColor = "black";
-  } else if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    document.getElementById("bar1").style.backgroundColor = "#EFEFEF";
-    document.getElementById("bar2").style.backgroundColor = "#EFEFEF";
-    document.getElementById("bar3").style.backgroundColor = "#EFEFEF";
-  }
-}
+var meaudio = document.getElementById('myAudio'); 
+var mp1 = document.getElementById('musicpl'); 
+var mp2 = document.getElementById('musicpa'); 
+var mp1a = document.getElementById('musicp2'); 
+var mp2a = document.getElementById('musicpa2');
+var loader = document.querySelector("#preloader");
 
-const meaudio = document.getElementById('myAudio'); 
-const mp1 = document.getElementById('musicpl'); 
-const mp2 = document.getElementById('musicpa'); 
-const mp1a = document.getElementById('musicp2'); 
-const mp2a = document.getElementById('musicpa2');
+window.onload = function() {
+    setTimeout(function() {
+      loader.style.opacity = "0";
+      setTimeout(function() {
+        loader.style.display = "none";
+      }, 500);
+    },1500);
+}
 
 function playAudio() { 
   meaudio.play(); 
@@ -44,27 +39,20 @@ function pauseAudio() {
   mp2a.style.display = 'none';
 }
 
-var timer = setTimeout(function() {
-    document.getElementById("preloader").style.display = "none";
-    document.getElementById('myAudio').autoplay;
-}, 1500);
-$(document).ready(function(){
-    $("#preloader").setTimeout();
-});
+window.onscroll = function() {
+  scrollFunction()
+};
 
-const loader = document.querySelector(".preloader");
-window.onload = function(){
-    setTimeout(function(){
-     loader.style.opacity = "0";
-     setTimeout(function(){
-       meaudio.play();
-       loader.style.display = "none";
-       mp1.style.display = 'none';
-       mp2.style.display = 'block';
-       mp1a.style.display = 'none';
-       mp2a.style.display = 'block';
-     }, 500);
-    },1500);
+function scrollFunction() {
+  if (document.body.scrollTop > 260 || document.documentElement.scrollTop > 260) {
+    document.getElementById("bar1").style.backgroundColor = "black";
+    document.getElementById("bar2").style.backgroundColor = "black";
+    document.getElementById("bar3").style.backgroundColor = "black";
+  } else if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    document.getElementById("bar1").style.backgroundColor = "#EFEFEF";
+    document.getElementById("bar2").style.backgroundColor = "#EFEFEF";
+    document.getElementById("bar3").style.backgroundColor = "#EFEFEF";
+  }
 }
 
 /* onclick */
