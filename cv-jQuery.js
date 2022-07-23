@@ -7,16 +7,16 @@
 * Suryo DwiJayanto
 */
 
-var meaudio = document.getElementById('myAudio'); 
-var mp1 = document.getElementById('musicpl'); 
-var mp2 = document.getElementById('musicpa'); 
-var mp1a = document.getElementById('musicp2'); 
-var mp2a = document.getElementById('musicpa2');
-var timer = setTimeout(function() {
+const meaudio = document.getElementById('myAudio'); 
+const mp1 = document.getElementById('musicpl'); 
+const mp2 = document.getElementById('musicpa'); 
+const mp1a = document.getElementById('musicp2'); 
+const mp2a = document.getElementById('musicpa2');
+const timer = setTimeout(function() {
     document.getElementById("preloader").style.display = "none";
 }, 1500);
 $(document).ready(function() {
-    $(".preloader").setTimeout();
+    $("#preloader").setTimeout();
 });
 
 function playAudio() { 
