@@ -12,7 +12,7 @@ var mp1 = document.getElementById('musicpl');
 var mp2 = document.getElementById('musicpa'); 
 var mp1a = document.getElementById('musicp2'); 
 var mp2a = document.getElementById('musicpa2');
-var loader = document.querySelector("#preloader");
+var loader = document.getElementById("preloader");
 
 window.onload = function() {
     setTimeout(function() {
