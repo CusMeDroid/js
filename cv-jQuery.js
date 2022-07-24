@@ -12,12 +12,6 @@ const mp1 = document.getElementById('musicpl');
 const mp2 = document.getElementById('musicpa'); 
 const mp1a = document.getElementById('musicp2'); 
 const mp2a = document.getElementById('musicpa2');
-const timer = setTimeout(function() {
-    document.getElementById("preloader").style.display = "none";
-}, 1500);
-$(document).ready(function() {
-    $("#preloader").setTimeout();
-});
 
 function playAudio() { 
   meaudio.play(); 
