@@ -1,23 +1,11 @@
 /*
 * This for cv theme, i don't want to break my style just because of code change!
 * Please Do Not Remove This
-* 7/24/2022
+* 7/22/2022
 * CusMeDroid
 * IyoRTML
 * Suryo DwiJayanto
 */
-
-function submitFunc() {
-    var search = document.getElementById('search');
-    if (search.value < 1) {
-        alert('Please fill out this field!');
-    } else if(search.value > 1) {
-        window.open(location+search.value,'_blank');
-    } else {
-        window.open(location+search.value,'_blank');
-    }
-    window.close();
-}
 
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
@@ -59,82 +47,54 @@ function autocomplete(inp, arr) {
         }
       }
   });
-  /* 
-  * Please Do Not Remove This
-  * 7/24/2022
-  * CusMeDroid
-  * IyoRTML
-  * Suryo DwiJayanto
-  */
   /*execute a function presses a key on the keyboard:*/
   inp.addEventListener("keydown", function(e) {
-      var x = document.getElementById(this.id + "autocomplete-list");
-      if (x) x = x.getElementsByTagName("div");
+      var sauto = document.getElementById(this.id + "autocomplete-list");
+      if (sauto) sauto = sauto.getElementsByTagName("div");
       if (e.keyCode == 40) {
         /*If the arrow DOWN key is pressed,
         increase the currentFocus variable:*/
         currentFocus++;
         /*and and make the current item more visible:*/
-        addActive(x);
+        addActive(sauto);
       } else if (e.keyCode == 38) { //up
         /*If the arrow UP key is pressed,
         decrease the currentFocus variable:*/
         currentFocus--;
         /*and and make the current item more visible:*/
-        addActive(x);
+        addActive(sauto);
       } else if (e.keyCode == 13) {
         /*If the ENTER key is pressed, prevent the form from being submitted,*/
         e.preventDefault();
         if (currentFocus > -1) {
           /*and simulate a click on the "active" item:*/
-          if (x) x[currentFocus].click();
+          if (sauto) sauto[currentFocus].click();
         }
       }
   });
-  /* 
-  * Please Do Not Remove This
-  * 7/24/2022
-  * CusMeDroid
-  * IyoRTML
-  * Suryo DwiJayanto
-  */
-  function addActive(x) {
+  function addActive(sauto) {
     /*a function to classify an item as "active":*/
-    if (!x) return false;
+    if (!sauto) return false;
     /*start by removing the "active" class on all items:*/
-    removeActive(x);
-    if (currentFocus >= x.length) currentFocus = 0;
-    if (currentFocus < 0) currentFocus = (x.length - 1);
+    removeActive(sauto);
+    if (currentFocus >= sauto.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (sauto.length - 1);
     /*add class "autocomplete-active":*/
-    x[currentFocus].classList.add("autocomplete-active");
+    sauto[currentFocus].classList.add("autocomplete-active");
   }
-  /* 
-  * Please Do Not Remove This
-  * 7/24/2022
-  * CusMeDroid
-  * IyoRTML
-  * Suryo DwiJayanto
-  */
-  function removeActive(x) {
+  function removeActive(sauto) {
     /*a function to remove the "active" class from all autocomplete items:*/
-    for (var i = 0; i < x.length; i++) {
-      x[i].classList.remove("autocomplete-active");
+    for (var i = 0; i < sauto.length; i++) {
+      sauto[i].classList.remove("autocomplete-active");
     }
   }
-  /* 
-  * Please Do Not Remove This
-  * 7/24/2022
-  * CusMeDroid
-  * IyoRTML
-  * Suryo DwiJayanto
-  */
   function closeAllLists(elmnt) {
     /*close all autocomplete lists in the document,
     except the one passed as an argument:*/
-    var x = document.getElementsByClassName("autocomplete-items");
-    for (var i = 0; i < x.length; i++) {
-      if (elmnt != x[i] && elmnt != inp) {
-        x[i].parentNode.removeChild(x[i]);
+    var sauto = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < sauto.length; i++) {
+      if (elmnt != sauto[i] && elmnt != inp) {
+        sauto[i].parentNode.removeChild(sauto[i]);
       }
     }
   }
@@ -142,13 +102,6 @@ function autocomplete(inp, arr) {
   document.addEventListener("click", function (e) {
       closeAllLists(e.target);
   });
-  /* 
-  * Please Do Not Remove This
-  * 7/24/2022
-  * CusMeDroid
-  * IyoRTML
-  * Suryo DwiJayanto
-  */
 }
 
 /*An array containing all the country names in the world:*/
@@ -156,3 +109,11 @@ var repositories = ["cv","cv/suryodwijayanto","cv/sahrul","cv/mohjakayulianto","
 
 /*initiate the autocomplete function on the "search" element, and pass along the repositories array as possible autocomplete values:*/
 autocomplete(document.getElementById("search"), repositories);
+
+function submitFunc() {
+    if(autocomplete.value > 1) {
+        window.open('http://cusmedroid.github.io/'+search.value,'_blank');
+    } else {
+        window.open('http://cusmedroid.github.io/'+search.value,'_blank');
+    }
+}
