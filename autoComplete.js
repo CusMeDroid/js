@@ -109,11 +109,3 @@ var repositories = ["cv","cv/suryodwijayanto","cv/sahrul","cv/mohjakayulianto","
 
 /*initiate the autocomplete function on the "search" element, and pass along the repositories array as possible autocomplete values:*/
 autocomplete(document.getElementById("search"), repositories);
-
-function submitFunc() {
-    if(autocomplete.value > 1) {
-        window.open('http://cusmedroid.github.io/'+search.value,'_blank');
-    } else {
-        window.open('http://cusmedroid.github.io/'+search.value,'_blank');
-    }
-}
