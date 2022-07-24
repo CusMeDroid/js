@@ -1,11 +1,23 @@
 /*
 * This for cv theme, i don't want to break my style just because of code change!
 * Please Do Not Remove This
-* 7/22/2022
+* 7/24/2022
 * CusMeDroid
 * IyoRTML
 * Suryo DwiJayanto
 */
+
+function submitFunc() {
+    var search = document.getElementById('search');
+    if (search.value < 1) {
+        alert('Please fill out this field!');
+    } else if(search.value > 1) {
+        window.open(location+search.value,'_blank');
+    } else {
+        window.open(location+search.value,'_blank');
+    }
+    window.close();
+}
 
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
@@ -47,6 +59,13 @@ function autocomplete(inp, arr) {
         }
       }
   });
+  /* 
+  * Please Do Not Remove This
+  * 7/24/2022
+  * CusMeDroid
+  * IyoRTML
+  * Suryo DwiJayanto
+  */
   /*execute a function presses a key on the keyboard:*/
   inp.addEventListener("keydown", function(e) {
       var x = document.getElementById(this.id + "autocomplete-list");
@@ -72,6 +91,13 @@ function autocomplete(inp, arr) {
         }
       }
   });
+  /* 
+  * Please Do Not Remove This
+  * 7/24/2022
+  * CusMeDroid
+  * IyoRTML
+  * Suryo DwiJayanto
+  */
   function addActive(x) {
     /*a function to classify an item as "active":*/
     if (!x) return false;
@@ -82,12 +108,26 @@ function autocomplete(inp, arr) {
     /*add class "autocomplete-active":*/
     x[currentFocus].classList.add("autocomplete-active");
   }
+  /* 
+  * Please Do Not Remove This
+  * 7/24/2022
+  * CusMeDroid
+  * IyoRTML
+  * Suryo DwiJayanto
+  */
   function removeActive(x) {
     /*a function to remove the "active" class from all autocomplete items:*/
     for (var i = 0; i < x.length; i++) {
       x[i].classList.remove("autocomplete-active");
     }
   }
+  /* 
+  * Please Do Not Remove This
+  * 7/24/2022
+  * CusMeDroid
+  * IyoRTML
+  * Suryo DwiJayanto
+  */
   function closeAllLists(elmnt) {
     /*close all autocomplete lists in the document,
     except the one passed as an argument:*/
@@ -102,6 +142,13 @@ function autocomplete(inp, arr) {
   document.addEventListener("click", function (e) {
       closeAllLists(e.target);
   });
+  /* 
+  * Please Do Not Remove This
+  * 7/24/2022
+  * CusMeDroid
+  * IyoRTML
+  * Suryo DwiJayanto
+  */
 }
 
 /*An array containing all the country names in the world:*/
