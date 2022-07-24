@@ -47,6 +47,12 @@ function autocomplete(inp, arr) {
         }
       }
   });
+  /*
+  * Powered by
+  * CusMeDroid
+  * IyoRTML
+  * Suryo DwiJayanto
+  */
   /*execute a function presses a key on the keyboard:*/
   inp.addEventListener("keydown", function(e) {
       var sauto = document.getElementById(this.id + "autocomplete-list");
@@ -72,6 +78,12 @@ function autocomplete(inp, arr) {
         }
       }
   });
+  /*
+  * Powered by
+  * CusMeDroid
+  * IyoRTML
+  * Suryo DwiJayanto
+  */
   function addActive(sauto) {
     /*a function to classify an item as "active":*/
     if (!sauto) return false;
@@ -88,6 +100,12 @@ function autocomplete(inp, arr) {
       sauto[i].classList.remove("autocomplete-active");
     }
   }
+  /*
+  * Powered by
+  * CusMeDroid
+  * IyoRTML
+  * Suryo DwiJayanto
+  */
   function closeAllLists(elmnt) {
     /*close all autocomplete lists in the document,
     except the one passed as an argument:*/
@@ -102,10 +120,16 @@ function autocomplete(inp, arr) {
   document.addEventListener("click", function (e) {
       closeAllLists(e.target);
   });
+  /*
+  * Powered by
+  * CusMeDroid
+  * IyoRTML
+  * Suryo DwiJayanto
+  */
 }
 
 /*An array containing all the country names in the world:*/
-var repositories = ["cv","cv/suryodwijayanto","cv/sahrul","cv/mohjakayulianto","android-studio","ip2location-contest"];
+var repositories = ["cv","cv/suryodwijayanto","cv/sahrul","cv/mohjakayulianto","android-studio","ip2location-contest","j-shop"];
 
 /*initiate the autocomplete function on the "search" element, and pass along the repositories array as possible autocomplete values:*/
 autocomplete(document.getElementById("search"), repositories);
