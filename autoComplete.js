@@ -128,8 +128,5 @@ function autocomplete(inp, arr) {
   */
 }
 
-/*An array containing all the country names in the world:*/
-var repositories = ["cv","cv/suryodwijayanto","cv/sahrul","cv/mohjakayulianto","android-studio","ip2location-contest","j-shop"];
-
 /*initiate the autocomplete function on the "search" element, and pass along the repositories array as possible autocomplete values:*/
 autocomplete(document.getElementById("search"), repositories);
