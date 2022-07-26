@@ -32,7 +32,7 @@ function pauseAudio() {
 */
 
 /* Embed play/pause */
-const player;
+var player;
 
 function onYouTubePlayerAPIReady() {
     player = new YT.Player('music-video', {
@@ -44,10 +44,10 @@ function onYouTubePlayerAPIReady() {
 }
 
 function onPlayerReady(event) {
-    const playButton = document.getElementById("musicpl");
-    const pauseButton = document.getElementById("musicpa");
-    const playButton2 = document.getElementById("musicp2");
-    const pauseButton2 = document.getElementById("musicpa2");
+    var playButton = document.getElementById("musicpl");
+    var pauseButton = document.getElementById("musicpa");
+    var playButton2 = document.getElementById("musicp2");
+    var pauseButton2 = document.getElementById("musicpa2");
     playButton.addEventListener("click", function() {
         player.playVideo();
     	playButton.style.display = "none";
@@ -65,9 +65,9 @@ function onPlayerReady(event) {
 
 }
 
-const tag = document.createElement('script');
+var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/player_api";
-const firstScriptTag = document.getElementsByTagName('script')[0];
+var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 /* End embed play/pause */
 
