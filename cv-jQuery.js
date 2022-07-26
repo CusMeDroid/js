@@ -7,6 +7,7 @@
 * Suryo DwiJayanto
 */
 
+/*
 const meaudio = document.getElementById('myAudio'); 
 const mp1 = document.getElementById('musicpl'); 
 const mp2 = document.getElementById('musicpa'); 
@@ -28,6 +29,47 @@ function pauseAudio() {
   mp1a.style.display = 'block';
   mp2a.style.display = 'none';
 }
+*/
+
+/* Embed play/pause */
+const player;
+
+function onYouTubePlayerAPIReady() {
+    player = new YT.Player('music-video', {
+        events: {
+            // call this function when player is ready to use
+            'onReady': onPlayerReady
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    const playButton = document.getElementById("musicpl");
+    const pauseButton = document.getElementById("musicpa");
+    const playButton2 = document.getElementById("musicp2");
+    const pauseButton2 = document.getElementById("musicpa2");
+    playButton.addEventListener("click", function() {
+        player.playVideo();
+    	playButton.style.display = "none";
+    	pauseButton.style.display = "block";
+    	playButton2.style.display = "none";
+    	pauseButton2.style.display = "block";
+    });
+    pauseButton.addEventListener("click", function() {
+        player.pauseVideo();
+    	playButton.style.display = "block";
+    	pauseButton.style.display = "none";
+    	playButton2.style.display = "block";
+    	pauseButton2.style.display = "none";
+    });
+
+}
+
+const tag = document.createElement('script');
+tag.src = "https://www.youtube.com/player_api";
+const firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+/* End embed play/pause */
 
 window.onscroll = function() {
   scrollFunction()
