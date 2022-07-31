@@ -5,7 +5,7 @@
 * Suryo DwiJayanto
 */
 var repositories = ['guide/html','guide/css','guide/js','guide/audio','guide/video',
-  'home','docs','roadmap','privacy',
+  'home','docs','roadmap','privacy','IyoRTML',
   'cv','cv/suryodwijayanto','cv/sahrul','cv/mohjakayulianto','Suryo DwiJayanto','Sahrul','Moh Jaka Yulianto',
   'android-studio','ip2location-contest','j-shop','blog','desktop'
 ];
@@ -26,6 +26,8 @@ function submitFunc() {
         window.location.href = 'cv/sahrul';
     } else if (search.value == 'Moh Jaka Yulianto') {
         window.location.href = 'cv/mohjakayulianto';
+    } else if (search.value == 'IyoRTML') {
+        window.location.href = 'https://google.com/search?q=IyoRTML';
     } else {
         window.location.href = search.value;
     }
