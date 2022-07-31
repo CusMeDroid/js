@@ -4,7 +4,7 @@
 * IyoRTML
 * Suryo DwiJayanto
 */
-var repositories = ['guide/html','guide/css','guide/js','guide/audio','guide/video',
+var repositories = ['guide/html','guide/css','guide/js','guide/audio','guide/video','iPlay Music',
   'home','docs','roadmap','privacy','IyoRTML','Amazon','Google','Yahoo','Twitter','Facebook','Instagram','TikTok',
   'cv','cv/suryodwijayanto','cv/sahrul','cv/mohjakayulianto','Suryo DwiJayanto','Sahrul','Moh Jaka Yulianto',
   'android-studio','ip2location-contest','j-shop','blog','desktop'
@@ -28,6 +28,8 @@ function submitFunc() {
         window.location.href = 'cv/mohjakayulianto';
     } else if (search.value == 'IyoRTML') {
         window.location.href = 'https://google.com/search?q=IyoRTML';
+    } else if (search.value == 'iPlay Music') {
+        window.location.href = 'https://sites.google.com/view/iplay';
     }
     /* Medsos */
     else if (search.value == 'Amazon') {
