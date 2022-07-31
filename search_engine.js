@@ -30,5 +30,7 @@ function submitFunc() {
         } else {
             window.location.href = search.value;
         }
+    } else {
+        window.location.href = search.value;
     }
 }
