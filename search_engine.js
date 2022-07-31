@@ -6,7 +6,7 @@
 */
 var repositories = ['guide/html','guide/css','guide/js','guide/audio','guide/video',
   'home','docs','roadmap','privacy',
-  'cv','cv/suryodwijayanto','cv/sahrul','cv/mohjakayulianto','Suryo DwiJayanto','sahrul','Moh Jaka Yulianto',
+  'cv','cv/suryodwijayanto','cv/sahrul','cv/mohjakayulianto','Suryo DwiJayanto','Sahrul','Moh Jaka Yulianto',
   'android-studio','ip2location-contest','j-shop','blog','desktop'
 ];
 autocomplete(document.getElementById('search'), repositories);
