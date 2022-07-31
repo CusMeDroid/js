@@ -20,7 +20,7 @@ function submitFunc() {
     var search = document.getElementById('search');
     if (search.value < 1) {
         alert('Please fill out this field!');
-    } else if(search.value > 1) {
+    } else if (search.value > 1) {
         if (search.value == 'Suryo DwiJayanto') {
             window.location.href = 'cv/suryodwijayanto';
         } else if (search.value == 'Sahrul') {
@@ -30,7 +30,5 @@ function submitFunc() {
         } else {
             window.location.href = search.value;
         }
-    } else {
-        window.location.href = search.value;
     }
 }
