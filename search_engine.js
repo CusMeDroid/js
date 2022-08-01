@@ -5,7 +5,7 @@
 * Suryo DwiJayanto
 */
 var repositories = ['guide/html','guide/css','guide/js','guide/audio','guide/video','iPlay Music','Rumah Sayur Bogor',
-  'home','docs','roadmap','privacy','CusMeDroid','IyoRTML','Amazon','Google','Yahoo','Twitter','Facebook','Instagram','TikTok',
+  'home','docs','roadmap','privacy','CusMeDroid','IyoRTML','Amazon','Bing','Google','Yahoo','Twitter','Facebook','Instagram','TikTok',
   'cv','cv/suryodwijayanto','cv/sahrul','cv/mohjakayulianto','Suryo DwiJayanto','Sahrul','Moh Jaka Yulianto',
   'android-studio','ip2location-contest','j-shop','blog','desktop'
 ];
@@ -38,6 +38,8 @@ function submitFunc() {
         window.open('https://sites.google.com/view/rumahsayurbogor');
     } else if (search.value == 'Amazon') {
         window.open('https://amazon.com');
+    } else if (search.value == 'Bing') {
+        window.open('https://www.bing.com/search?q=cusmedroid');
     } else if (search.value == 'Google') {
         window.open('https://google.com/search?q=CusMeDroid');
     } else if (search.value == 'Yahoo') {
