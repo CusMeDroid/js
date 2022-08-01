@@ -28,28 +28,28 @@ function submitFunc() {
         window.location.href = 'cv/mohjakayulianto';
     } else if (search.value == 'CusMeDroid') {
         window.location.href = 'https://cusmedroid.ink';
-    } else if (search.value == 'IyoRTML') {
-        window.location.href = 'https://google.com/search?q=IyoRTML';
-    } else if (search.value == 'iPlay Music') {
-        window.location.href = 'https://sites.google.com/view/iplay';
-    } else if (search.value == 'Rumah Sayur Bogor') {
-        window.location.href = 'https://sites.google.com/view/rumahsayurbogor';
     }
-    /* Medsos */
-    else if (search.value == 'Amazon') {
-        window.location.href = 'https://amazon.com';
+    /* Beyond our search */
+    else if (search.value == 'IyoRTML') {
+        window.open('https://google.com/search?q=IyoRTML');
+    } else if (search.value == 'iPlay Music') {
+        window.open('https://sites.google.com/view/iplay');
+    } else if (search.value == 'Rumah Sayur Bogor') {
+        window.open('https://sites.google.com/view/rumahsayurbogor');
+    } else if (search.value == 'Amazon') {
+        window.open('https://amazon.com');
     } else if (search.value == 'Google') {
-        window.location.href = 'https://google.com/search?q=CusMeDroid';
+        window.open('https://google.com/search?q=CusMeDroid');
     } else if (search.value == 'Yahoo') {
-        window.location.href = 'https://yahoo.com/search?q=CusMeDroid';
+        window.open('https://yahoo.com/search?q=CusMeDroid');
     } else if (search.value == 'Twitter') {
-        window.location.href = 'https://twitter.com/IyoRTML';
+        window.open('https://twitter.com/IyoRTML');
     } else if (search.value == 'Facebook') {
-        window.location.href = 'https://facebook.com/suryo.dwijayantoskom';
+        window.open('https://facebook.com/suryo.dwijayantoskom');
     } else if (search.value == 'Instagram') {
-        window.location.href = 'https://instagram.com/suryodwijayanto';
+        window.open('https://instagram.com/suryodwijayanto');
     } else if (search.value == 'TikTok') {
-        window.location.href = 'https://tiktok.com/@suryodwijayanto';
+        window.open('https://tiktok.com/@suryodwijayanto');
     } else {
         window.location.href = search.value;
     }
