@@ -6,7 +6,7 @@
 */
 var repositories = ['guide/html','guide/css','guide/js','guide/audio','guide/video','iPlay Music','Rumah Sayur Bogor',
   'home','docs','roadmap','privacy','CusMeDroid','IyoRTML','Amazon','Bing','Google','Yahoo','Twitter','Facebook','Instagram','TikTok',
-  'cv','cv/suryodwijayanto','cv/sahrul','cv/mohjakayulianto','Suryo DwiJayanto','Sahrul','Moh Jaka Yulianto',
+  'cv','Suryo DwiJayanto','Sahrul','Moh Jaka Yulianto',
   'android-studio','ip2location-contest','j-shop','blog','desktop','navigation-bottom'
 ];
 autocomplete(document.getElementById('search'), repositories);
