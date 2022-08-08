@@ -4,7 +4,7 @@
 * IyoRTML
 * Suryo DwiJayanto
 */
-var repositories = ['guide/html','guide/css','guide/js','guide/audio','guide/video','iPlay Music','Rumah Sayur Bogor',
+var repositories = ['HTML','CSS','JS','JavaScript','Audio','Video','iPlay Music','Rumah Sayur Bogor',
   'home','docs','roadmap','privacy','CusMeDroid','IyoRTML','Amazon','Bing','Google','Yahoo','Twitter','Facebook','Instagram','TikTok',
   'cv','Suryo DwiJayanto','Sahrul','Moh Jaka Yulianto',
   'android-studio','ip2location-contest','j-shop','blog','desktop','navigation-bottom'
@@ -28,6 +28,16 @@ function submitFunc() {
         window.location.href = 'cv/mohjakayulianto';
     } else if (search.value == 'CusMeDroid') {
         window.location.href = 'https://cusmedroid.ink';
+    } else if (search.value == 'HTML') {
+        window.location.href = 'guide/html';
+    } else if (search.value == 'CSS') {
+        window.location.href = 'guide/css';
+    } else if (search.value == 'JS' || search.value == 'JavaScript') {
+        window.location.href = 'guide/js';
+    } else if (search.value == 'Audio') {
+        window.location.href = 'guide/audio';
+    } else if (search.value == 'Video') {
+        window.location.href = 'guide/video';
     }
     /* Beyond our search */
     else if (search.value == 'IyoRTML') {
