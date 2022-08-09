@@ -88,6 +88,28 @@ $(document).ready(function(){
   });
 });
 
+/* onclick */
+function meHome() {
+    window.location.href = '#';
+}
+function meCollect() {
+    window.location.href = '#collection';
+}
+function meLike() {
+    window.location.href = '#like';
+}
+function mAbout() {
+    window.location.href = '#about';
+}
+
+function mStudy() {
+    window.location.href = '#study';
+}
+
+function mContact() {
+    window.location.href = '#contact';
+}
+
 /* Navbar bottom new */
 var menu_bar = document.querySelector('.me-bottom-bar');
 var menu_item = document.querySelectorAll('.me-menu-item');
@@ -113,25 +135,3 @@ menu_item.forEach(
     });
   }
 )
-
-/* onclick */
-function meHome() {
-    window.location.href = '#';
-}
-function meCollect() {
-    window.location.href = '#collection';
-}
-function meLike() {
-    window.location.href = '#like';
-}
-function mAbout() {
-    window.location.href = '#about';
-}
-
-function mStudy() {
-    window.location.href = '#study';
-}
-
-function mContact() {
-    window.location.href = '#contact';
-}
