@@ -78,6 +78,16 @@ function scrollFunction() {
   }
 }
 
+/* Me Menu Main */
+function myFunction(memenu) {
+  memenu.classList.toggle("change");
+}
+$(document).ready(function(){
+  $("#smenu").click(function(){
+    $("#cmenu").slideToggle('fast');
+  });
+});
+
 /* Navbar bottom new */
 var menu_bar = document.querySelector('.me-bottom-bar');
 var menu_item = document.querySelectorAll('.me-menu-item');
@@ -125,12 +135,3 @@ function mStudy() {
 function mContact() {
     window.location.href = '#contact';
 }
-
-function myFunction(memenu) {
-  memenu.classList.toggle("change");
-}
-$(document).ready(function(){
-  $("#smenu").click(function(){
-    $("#cmenu").slideToggle('fast');
-  });
-});
