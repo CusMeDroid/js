@@ -7,7 +7,7 @@
 var repositories = ['HTML','CSS','JS','JavaScript','Audio','Video','iPlay Music','Rumah Sayur Bogor',
   'home','docs','roadmap','privacy','CusMeDroid','IyoRTML','Amazon','Bing','Google','Yahoo','Twitter','Facebook','Instagram','TikTok',
   'cv','Suryo DwiJayanto','Sahrul','Moh Jaka Yulianto',
-  'android-studio','ip2location-contest','j-shop','blog','desktop','navigation-bottom'
+  'android-studio','ip2location-contest','j-shop','blog','desktop','navigation-bottom','collapse'
 ];
 autocomplete(document.getElementById('search'), repositories);
 /* Function button click
