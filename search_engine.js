@@ -6,7 +6,7 @@
 */
 var repositories = ['HTML','CSS','JS','JavaScript','Audio','Video','iPlay Music','Rumah Sayur Bogor',
   'home','docs','roadmap','privacy','CusMeDroid','IyoRTML','Amazon','Bing','Google','Yahoo','Twitter','Facebook','Instagram','TikTok',
-  'cv','Suryo DwiJayanto','Sahrul','Moh Jaka Yulianto',
+  'cv','Suryo DwiJayanto','Sahrul','Moh Jaka Yulianto', 'TV Streaming Indonesia'
   'android-studio','ip2location-contest','j-shop','blog','desktop','navigation-bottom','collapse'
 ];
 autocomplete(document.getElementById('search'), repositories);
@@ -20,6 +20,8 @@ function submitFunc() {
     var search = document.getElementById('search');
     if (search.value < 1) {
         alert('Please fill out this field!');
+    } else if (search.value == 'TV Streaming Indonesia') {
+        window.location.href = 'tv-streaming-indonesia';
     } else if (search.value == 'Suryo DwiJayanto') {
         window.location.href = 'cv/suryodwijayanto';
     } else if (search.value == 'Sahrul') {
