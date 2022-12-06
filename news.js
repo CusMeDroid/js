@@ -9,7 +9,7 @@ fetch(mmurl)
 .then(rep => {
     const data = JSON.parse(rep.substr(47).slice(0,-2));
     const container = document.createElement('div');
-    container.setAttribute('class', 'row uvh');
+    container.setAttribute('class', 'row');
     data.table.rows.forEach((main)=>{
     mmlkjs.append(container);
     console.log(main.c[0]);
