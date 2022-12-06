@@ -30,7 +30,7 @@ fetch(mmurl)
     const desc = document.createElement('p');
     //const bbtn = document.createElement('button');
     //const hreff = document.createElement('a');
-    column.setAttribute('class', 'column4');
+    column.setAttribute('class', 'column3');
     card.setAttribute('class', 'card');
     //link.setAttribute('href', fullHref);
     // link.setAttribute('target', '_blank');
@@ -39,7 +39,7 @@ fetch(mmurl)
     elem.setAttribute('src', fullLink);
     elem.setAttribute('title', fullTit);
     elem.setAttribute('alt', fullTit);
-    elem.setAttribute('class', 'card-img hiframe');
+    elem.setAttribute('class', 'card-img');
     huah.innerHTML = fullTit;
     huah.setAttribute('class', 'black Audiowide padd-8');  
     
