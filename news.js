@@ -1,5 +1,5 @@
 let mmurl = 'https://docs.google.com/spreadsheets/d/16jLiTOUMuXSw8ymsevQ9lRS-mg6fmDWihBAri1oe9xo/gviz/tq?';
-const lkjs = document.mmquerySelector('.lkjs');
+const mmlkjs = document.mmquerySelector('.mmlkjs');
 const mmquery = encodeURIComponent('Select B,C,D ASC');
 console.log(mmquery);
 mmurl = mmurl + '&tq=' + mmquery;
@@ -11,7 +11,7 @@ fetch(mmurl)
     const container = document.createElement('div');
     container.setAttribute('class', 'row uvh');
     data.table.rows.forEach((main)=>{
-    lkjs.append(container);
+    mmlkjs.append(container);
     console.log(main.c[0]);
     const imgna = main.c[0];
     console.log(main.c[1]);
