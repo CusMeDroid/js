@@ -1,5 +1,5 @@
 let mmurl = 'https://docs.google.com/spreadsheets/d/16jLiTOUMuXSw8ymsevQ9lRS-mg6fmDWihBAri1oe9xo/gviz/tq?';
-const mmlkjs = document.mmquerySelector('.mmlkjs');
+const mmlkjs = document.querySelector('.mmlkjs');
 const mmquery = encodeURIComponent('SELECT B,C,D ORDER BY A ASC');
 console.log(mmquery);
 mmurl = mmurl + '&tq=' + mmquery;
