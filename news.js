@@ -45,6 +45,7 @@ fetch(mmurl)
     
     desc.innerHTML = fullDes;
     desc.setAttribute('class', 'padd-8 Trirong');
+    desc.setAttribute('height', '30px');
     //bbtn.setAttribute('class', 'Trirong green radius-20 blog-btn');
     
     /*
