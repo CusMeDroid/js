@@ -30,7 +30,7 @@ fetch(mmurl)
     const desc = document.createElement('p');
     //const bbtn = document.createElement('button');
     //const hreff = document.createElement('a');
-    column.setAttribute('class', 'column3');
+    column.setAttribute('class', 'column0');
     card.setAttribute('class', 'card');
     //link.setAttribute('href', fullHref);
     // link.setAttribute('target', '_blank');
