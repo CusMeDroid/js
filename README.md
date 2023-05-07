@@ -4,15 +4,15 @@ jQuery adalah library JavaScript yang cepat, kecil, dan kaya fitur. Itu membuat 
 *Powered by [jQuery](https://jquery.com/)*
 
 ## Cara embed
-`<head>`
-
-`<script src="https://cusmedroid.github.io/js/jquery-3.6.0.min.js"></script>`
-
-`</head>`
+``` html
+<head>
+  <script src="https://cusmedroid.github.io/js/jquery-3.6.0.min.js"></script>
+</head>
+```
 
 # Anti CTRL+U
-`<body id="myCopyRight">`
-
-`<script src="https://cusmedroid.github.io/js/disclaimer.js"></script>`
-
-`</body>`
+``` html
+<body id="myCopyRight">
+  <script src="https://cusmedroid.github.io/js/disclaimer.js"></script>
+</body>
+```
