@@ -17,7 +17,7 @@ var mainCode = '<!DOCTYPE html>\n'+
 '<html>\n'+
 '<head>\n'+
 '<link rel="stylesheet" type="text/css" href="style.css" />\n'+
-'<script type="text/javascript" src="index.js"\n'+
+'<script type="text/javascript" src="index.js" />\n'+
 '</head>\n'+
 '<body>';
 var endCode = '</body>\n'+
