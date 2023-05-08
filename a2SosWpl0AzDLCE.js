@@ -25,7 +25,7 @@ function run() {
 
 let TXThtml = document.getElementsByClassName("htmlTXT").value;
 let OutHtml = document.getElementById("vhtml");
-if (OutHtml == null) {
+if (!OutHtml) {
   OutHtml.innerHTML = "";
 } else {
   OutHtml.innerHTML = TXThtml;
