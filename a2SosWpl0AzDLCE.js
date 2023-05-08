@@ -29,11 +29,7 @@ function run() {
 }
 
 function save(filename, html) {
-  if (!mhtml) {
-    mout.innerHTML = mhtml = "";
-  } else {
-    mout.innerHTML = mhtml.value;
-  }
+  html = mhtml.value;
   var el = document.createElement('a');
   el.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(html));
   el.setAttribute('download', filename);
