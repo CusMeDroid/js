@@ -13,9 +13,9 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-const mhtml = document.getElementById("html-code").innerHTML;
-const mcss = document.getElementById("css-code").innerHTML;
-const mjs = document.getElementById("js-code").innerHTML;
+const mhtml = document.getElementById("html-code");
+const mcss = document.getElementById("css-code");
+const mjs = document.getElementById("js-code");
 const mout = document.getElementById("output");
 
 function run() {
