@@ -25,7 +25,7 @@ function run() {
 
 let TXThtml = document.getElementsByClassName("htmlTXT").value;
 let OutHtml = document.getElementById("vhtml");
-OutHtml.contentDocument.body.innerHTML = TXThtml;
+OutHtml.innerHTML = TXThtml;
 let TXTcss = document.getElementsByClassName("cssTXT").value;
 let TXTjs = document.getElementsByClassName("jsTXT").value;
 
