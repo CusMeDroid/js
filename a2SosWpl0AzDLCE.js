@@ -23,9 +23,9 @@ function run() {
   output.contentWindow.eval(jsCode);
 }
 
-var htmlTXT = document.getElementsByClassName("htmlTXT").value;
-var cssTXT = document.getElementsByClassName("cssTXT").value;
-var jsTXT = document.getElementsByClassName("jsTXT").value;
+var htmlTXT = document.getElementsByClassName("htmlTXT").innerHTML;
+var cssTXT = document.getElementsByClassName("cssTXT").innerHTML;
+var jsTXT = document.getElementsByClassName("jsTXT").innerHTML;
 
 function openFile (textToEncode, contentType, newWindow) {
     var encodedText = window.btoa(textToEncode);
