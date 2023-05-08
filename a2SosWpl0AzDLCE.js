@@ -13,15 +13,15 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-const mhtml = document.getElementById("html-code");
-const mcss = document.getElementById("css-code");
-const mjs = document.getElementById("js-code");
-const mout = document.getElementById("output");
+const mhtml = document.getElementById("html-code").value;
+const mcss = document.getElementById("css-code").value;
+const mjs = document.getElementById("js-code").value;
+const mout = document.getElementById("output").value;
 
 function run() {
-  let htmlCode = mhtml.value;
-  let cssCode = mcss.value;
-  let jsCode = mjs.value;
+  let htmlCode = mhtml;
+  let cssCode = mcss;
+  let jsCode = mjs;
   let output = mout;
 
   output.contentDocument.body.innerHTML = htmlCode+"<style>"+cssCode+"</style>";
@@ -29,7 +29,6 @@ function run() {
 }
 
 function save(filename, html) {
-  html = mhtml.value;
   var el = document.createElement('a');
   el.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(html));
   el.setAttribute('download', filename);
