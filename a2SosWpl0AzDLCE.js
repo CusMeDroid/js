@@ -17,10 +17,10 @@ var mainCode = '<!DOCTYPE html>\n'+
 '<html>\n'+
 '<head>\n'+
 '<title>Live Code Editor | CusMeDroid</title>\n'+
-'<script type="text/javascript" src="index.js" />\n'+
+'<link rel="stylesheet" type="text/css" href="style.css" />\n'+
 '</head>\n'+
 '<body>\n';
-var endCode = '\n<link rel="stylesheet" type="text/css" href="style.css" />\n'+
+var endCode = '\n<script type="text/javascript" src="index.js" />\n'+
 '</body>\n'+
 '</html>';
 
