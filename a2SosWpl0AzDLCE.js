@@ -18,7 +18,11 @@ const mcss = document.getElementById("css-code");
 const mjs = document.getElementById("js-code");
 const mout = document.getElementById("output");
 
-const cusel = mhtml.value;
+if (!mhtml) {
+  mhtml = "";
+} else {
+  mhtml.value;
+}
 
 function run() {
   let htmlCode = mhtml.value;
