@@ -23,6 +23,10 @@ function run() {
   output.contentWindow.eval(jsCode);
 }
 
+var htmlTXT = document.getElementsByClassName("htmlTXT").value;
+var cssTXT = document.getElementsByClassName("cssTXT").value;
+var jsTXT = document.getElementsByClassName("jsTXT").value;
+
 function openFile (textToEncode, contentType, newWindow) {
     var encodedText = window.btoa(textToEncode);
     var dataURL = 'data:' + contentType + ';base64,' + encodedText;
