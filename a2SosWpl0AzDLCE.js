@@ -25,9 +25,11 @@ function run() {
 
 function save(filename, html) {
   var el = document.createElement('a');
+  var lhtml = document.getElementsByClassName('textHTML').value;
   el.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(html));
   el.setAttribute('download', filename);
   el.style.display = 'none';
+  el.innerHTML = lhtml;
   document.body.appendChild(el);
   el.click();
   document.body.removeChild(el);
