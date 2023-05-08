@@ -13,24 +13,27 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+const mhtml = document.getElementById("html-code");
+const mcss = document.getElementById("css-code");
+const mjs = document.getElementById("js-code");
+const mout = document.getElementById("output");
+
 function run() {
-  let htmlCode = document.getElementById("html-code").value;
-  let cssCode = document.getElementById("css-code").value;
-  let jsCode = document.getElementById("js-code").value;
-  let output = document.getElementById("output");
+  let htmlCode = mhtml.value;
+  let cssCode = mcss.value;
+  let jsCode = mjs.value;
+  let output = mout;
 
   output.contentDocument.body.innerHTML = htmlCode+"<style>"+cssCode+"</style>";
   output.contentWindow.eval(jsCode);
 }
-
-const lhtml = document.getElementsByClassName('textHTML').value;
 
 function save(filename, html) {
   var el = document.createElement('a');
   el.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(html));
   el.setAttribute('download', filename);
   el.style.display = 'none';
-  el.innerHTML = lhtml;
+  el.innerHTML = mhtml;
   document.body.appendChild(el);
   el.click();
   document.body.removeChild(el);
