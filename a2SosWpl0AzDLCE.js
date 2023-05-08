@@ -21,15 +21,19 @@ function run() {
 
   output.contentDocument.body.innerHTML = htmlCode+"<style>"+cssCode+"</style>";
   output.contentWindow.eval(jsCode);
-  
-  function openFile (textToEncode, contentType, newWindow) {
-      var encodedText = window.btoa(textToEncode);
-      var dataURL = 'data:' + contentType + ';base64,' + encodedText;
-      if (newWindow) {
-          window.open(dataURL);
-      }
-      else {
-          window.location = dataURL;
-      }
-  }
+}
+
+let myHTML = document.getElementById("html-code").innerHTML;
+let myCSS = document.getElementById("css-code").innerHTML;
+let myJS = document.getElementById("js-code").innerHTML;
+
+function openFile (textToEncode, contentType, newWindow) {
+    var encodedText = window.btoa(textToEncode);
+    var dataURL = 'data:' + contentType + ';base64,' + encodedText;
+    if (newWindow) {
+        window.open(dataURL);
+    }
+    else {
+        window.location = dataURL;
+    }
 }
