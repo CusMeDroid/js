@@ -23,9 +23,23 @@ function run() {
   output.contentWindow.eval(jsCode);
 }
 
-function download(text, name, type) {
-  var a = document.getElementById("a");
+function downloadHTML(text, name, type) {
+  var a = document.getElementById("html-code");
   var file = new Blob([text], {type: type});
   a.href = URL.createObjectURL(file);
   a.download = name;
+}
+
+function downloadCSS(text, name, type) {
+  var b = document.getElementById("css-code");
+  var file = new Blob([text], {type: type});
+  b.href = URL.createObjectURL(file);
+  b.download = name;
+}
+
+function downloadJS(text, name, type) {
+  var c = document.getElementById("js-code");
+  var file = new Blob([text], {type: type});
+  c.href = URL.createObjectURL(file);
+  c.download = name;
 }
