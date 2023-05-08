@@ -23,9 +23,10 @@ function run() {
   output.contentWindow.eval(jsCode);
 }
 
+const lhtml = document.getElementsByClassName('textHTML').value;
+
 function save(filename, html) {
   var el = document.createElement('a');
-  var lhtml = document.getElementsByClassName('textHTML').value;
   el.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(html));
   el.setAttribute('download', filename);
   el.style.display = 'none';
