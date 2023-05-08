@@ -18,7 +18,7 @@ const mcss = document.getElementById("css-code");
 const mjs = document.getElementById("js-code");
 const mout = document.getElementById("output");
 
-var cusel.innerHTML = mhtml.value;
+const cusel = mhtml.value;
 
 function run() {
   let htmlCode = mhtml.value;
