@@ -19,8 +19,8 @@ var mainCode = '<!DOCTYPE html>\n'+
 '<link rel="stylesheet" type="text/css" href="style.css" />\n'+
 '<script type="text/javascript" src="index.js" />\n'+
 '</head>\n'+
-'<body>';
-var endCode = '</body>\n'+
+'<body>\n';
+var endCode = '\n</body>\n'+
 '</html>';
 
 const mhtml = document.getElementById("html-code");
