@@ -22,7 +22,7 @@ function run() {
   let htmlCode = mhtml.value;
   let cssCode = mcss.value;
   let jsCode = mjs.value;
-  let output = mout.value;
+  let output = mout;
 
   output.contentDocument.body.innerHTML = htmlCode+"<style>"+cssCode+"</style>";
   output.contentWindow.eval(jsCode);
