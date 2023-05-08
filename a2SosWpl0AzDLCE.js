@@ -23,17 +23,12 @@ function run() {
   output.contentWindow.eval(jsCode);
 }
 
-var textHTML = htmlCode.innerHTML;
-var textCSS = cssCode.innerHTML;
-var textJS = jsCode.innerHTML;
-
-function openFile (textToEncode, contentType, newWindow) {
-    var encodedText = window.btoa(textToEncode);
-    var dataURL = 'data:' + contentType + ';base64,' + encodedText;
-    if (newWindow) {
-        window.open(dataURL);
-    }
-    else {
-        window.location = dataURL;
-    }
+function save(filename, html) {
+  var el = document.createElement('a');
+  el.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(html));
+  el.setAttribute('download', filename);
+  el.style.display = 'none';
+  document.body.appendChild(el);
+  el.click();
+  document.body.removeChild(el);
 }
