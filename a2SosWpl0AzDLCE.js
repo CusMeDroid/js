@@ -18,12 +18,6 @@ const mcss = document.getElementById("css-code");
 const mjs = document.getElementById("js-code");
 const mout = document.getElementById("output");
 
-if (!mhtml) {
-  mout.contentDocument.body.innerHTML = mhtml = "";
-} else {
-  mout.contentDocument.body.innerHTML = mhtml.value;
-}
-
 function run() {
   let htmlCode = mhtml.value;
   let cssCode = mcss.value;
@@ -35,6 +29,11 @@ function run() {
 }
 
 function save(filename, html) {
+  if (!mhtml) {
+    mout.innerHTML = mhtml = "";
+  } else {
+    mout.innerHTML = mhtml.value;
+  }
   var el = document.createElement('a');
   el.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(html));
   el.setAttribute('download', filename);
