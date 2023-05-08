@@ -19,9 +19,9 @@ const mjs = document.getElementById("js-code");
 const mout = document.getElementById("output");
 
 if (!mhtml) {
-  mhtml = "";
+  mout.contentDocument.body.innerHTML = mhtml = "";
 } else {
-  mhtml.value;
+  mout.contentDocument.body.innerHTML = mhtml.value;
 }
 
 function run() {
