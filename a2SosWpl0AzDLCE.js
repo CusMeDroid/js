@@ -13,6 +13,15 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+var mainCode = '<!DOCTYPE html>'
+'<html>'
+'<head>'
+'<link rel="stylesheet" type="text/css" href="style.css" />'
+'</head>'
+'<body>';
+var endCode = '</body>'
+'</html>';
+
 const mhtml = document.getElementById("html-code");
 const mcss = document.getElementById("css-code");
 const mjs = document.getElementById("js-code");
