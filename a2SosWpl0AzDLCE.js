@@ -22,3 +22,10 @@ function run() {
   output.contentDocument.body.innerHTML = htmlCode+"<style>"+cssCode+"</style>";
   output.contentWindow.eval(jsCode);
 }
+
+function download(text, name, type) {
+  var a = document.getElementById("a");
+  var file = new Blob([text], {type: type});
+  a.href = URL.createObjectURL(file);
+  a.download = name;
+}
