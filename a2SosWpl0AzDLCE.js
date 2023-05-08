@@ -35,7 +35,6 @@ function save(filename, html) {
   el.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(html));
   el.setAttribute('download', filename);
   el.style.display = 'none';
-  el.innerHTML = mhtml;
   document.body.appendChild(el);
   el.click();
   document.body.removeChild(el);
