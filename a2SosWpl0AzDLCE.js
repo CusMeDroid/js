@@ -13,14 +13,14 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-var mainCode = '<!DOCTYPE html>'\n+
-'<html>'\n+
-'<head>'\n+
-'<link rel="stylesheet" type="text/css" href="style.css" />'\n+
-'<script type="text/javascript" src="index.js"'\n+
-'</head>'\n+
+var mainCode = '<!DOCTYPE html>\n'+
+'<html>\n'+
+'<head>\n'+
+'<link rel="stylesheet" type="text/css" href="style.css" />\n'+
+'<script type="text/javascript" src="index.js"\n'+
+'</head>\n'+
 '<body>';
-var endCode = '</body>'\n+
+var endCode = '</body>\n'+
 '</html>';
 
 const mhtml = document.getElementById("html-code");
