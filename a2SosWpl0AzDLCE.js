@@ -13,16 +13,16 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-const mhtml = document.getElementById("html-code").value;
-const mcss = document.getElementById("css-code").value;
-const mjs = document.getElementById("js-code").value;
-const mout = document.getElementById("output").value;
+const mhtml = document.getElementById("html-code").innerHTML;
+const mcss = document.getElementById("css-code").innerHTML;
+const mjs = document.getElementById("js-code").innerHTML;
+const mout = document.getElementById("output").innerHTML;
 
 function run() {
-  let htmlCode = mhtml;
-  let cssCode = mcss;
-  let jsCode = mjs;
-  let output = mout;
+  let htmlCode = mhtml.value;
+  let cssCode = mcss.value;
+  let jsCode = mjs.value;
+  let output = mout.value;
 
   output.contentDocument.body.innerHTML = htmlCode+"<style>"+cssCode+"</style>";
   output.contentWindow.eval(jsCode);
