@@ -17,11 +17,11 @@ var mainCode = '<!DOCTYPE html>\n'+
 '<html>\n'+
 '<head>\n'+
 '<title>Live Code Editor | CusMeDroid</title>\n'+
-'<link rel="stylesheet" type="text/css" href="style.css" />\n'+
 '<script type="text/javascript" src="index.js" />\n'+
 '</head>\n'+
 '<body>\n';
-var endCode = '\n</body>\n'+
+var endCode = '\n<link rel="stylesheet" type="text/css" href="style.css" />\n'+
+'</body>\n'+
 '</html>';
 
 const mhtml = document.getElementById("html-code");
