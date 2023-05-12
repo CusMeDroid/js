@@ -20,7 +20,7 @@ var mainCode = '<!DOCTYPE html>\n'+
 '<link rel="stylesheet" type="text/css" href="style.css" />\n'+
 '</head>\n'+
 '<body>\n';
-var endCode = '\n<script type="text/javascript" src="index.js" />\n'+
+var endCode = '\n<script type="text/javascript" src="lce-script.js" />\n'+
 '</body>\n'+
 '</html>';
 
