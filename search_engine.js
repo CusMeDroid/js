@@ -6,7 +6,7 @@
 */
 var repositories = ['HTML','CSS','JS','JavaScript','Audio','Video','iPlay Music','Rumah Sayur Bogor',
   'home','docs','roadmap','privacy','CusMeDroid','IyoRTML','Amazon','Bing','Google','Yahoo','Twitter','Facebook','Instagram','TikTok',
-  'cv','Suryo DwiJayanto','Sahrul','Moh Jaka Yulianto', 'TV Streaming Indonesia', 'TV Digital', 'Filter', 'Live Code Editor',
+  'cv','Suryo DwiJayanto','Sahrul','Moh Jaka Yulianto', 'TV Streaming Indonesia', 'TV Digital', 'Filter', 'Live Code Editor', 'Live Making Barcode',
   'android-studio','ip2location-contest','j-shop','blog','desktop','navigation-bottom','collapse'
 ];
 autocomplete(document.getElementById('search'), repositories);
@@ -22,6 +22,8 @@ function submitFunc() {
         alert('Please fill out this field!');
     } else if (search.value == 'Live Code Editor') {
         window.location.href = 'live-code-editor';
+    } else if (search.value == 'Live Making Barcode') {
+        window.location.href = 'live-making-barcode';
     } else if (search.value == 'TV Streaming Indonesia') {
         window.location.href = 'tv-streaming-indonesia';
     } else if (search.value == 'TV Digital') {
