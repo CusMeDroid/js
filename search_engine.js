@@ -24,9 +24,9 @@ function submitFunc() {
     } else if (search.value == 'Live Code Editor') {
         window.location.href = 'live-code-editor';
     } else if (search.value == 'Scan Barcode') {
-        window.location.href = 'live-making-barcode/camera';
+        window.location.href = 'livemakingbarcode/camera';
     } else if (search.value == 'Live Making Barcode') {
-        window.location.href = 'live-making-barcode';
+        window.location.href = 'livemakingbarcode';
     } else if (search.value == 'TV Streaming Indonesia') {
         window.location.href = 'tv-streaming-indonesia';
     } else if (search.value == 'TV Digital') {
