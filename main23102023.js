@@ -54,8 +54,8 @@ var webkam = {
     .then(async (stream) => {
       
       webkam.worker = await Tesseract.createWorker();
-      await webkam.worker.loadLanguage("in");
-      await webkam.worker.initialize("in");
+      await webkam.worker.loadLanguage("eng");
+      await webkam.worker.initialize("eng");
 
       webkam.hVid.srcObject = stream;
       webkam.hGo.onclick = webkam.snap;
