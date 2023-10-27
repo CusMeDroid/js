@@ -78,8 +78,9 @@ var webkam = {
     const res = await webkam.worker.recognize(canvas.toDataURL("image/png"));
     webkam.hRes.value = res.data.text;
     var mtext = res.data.text;
+    var t,e,a;
     firebase.database().ref("MeTextAI/Log/Camera/" + time).set({Text: mtext});
-    firebase.database().ref("MeTextAI/Post/" + time).set({Text: mtext, Category: Camera});
+    firebase.database().ref("MeTextAI/Post/" + time).set({Latitude:t,Longitude:e,Maps:a,Text: mtext, Category: Camera});
     
     mVid.style.display = "none";
     mView.style.display = "block";
