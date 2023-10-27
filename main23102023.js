@@ -1,3 +1,5 @@
+var msk = new Date();
+let time = msk.getTime();
 var mFront = document.getElementById("front");
 var mBack = document.getElementById("back");
 var mBtm = document.getElementById("btm");
@@ -75,6 +77,8 @@ var webkam = {
 
     const res = await webkam.worker.recognize(canvas.toDataURL("image/png"));
     webkam.hRes.value = res.data.text;
+    var mtext = res.data.text;
+    firebase.database().ref("MeTextAI/Camera/" + time).set({Text: mtext});
     
     mVid.style.display = "none";
     mView.style.display = "block";
