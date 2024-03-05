@@ -44,7 +44,7 @@ function submitFunc() {
     } else if (search.value == 'Moh Jaka Yulianto') {
         window.location.href = 'cv/mohjakayulianto';
     } else if (search.value == 'CusMeDroid') {
-        window.location.href = 'https://cusmedroid.ink';
+        window.location.href = 'https://cusmedroid.github.io';
     } else if (search.value == 'HTML') {
         window.location.href = 'guide/html';
     } else if (search.value == 'CSS') {
